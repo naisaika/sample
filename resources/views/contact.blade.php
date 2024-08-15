@@ -11,7 +11,7 @@
     <form action="{{ route('contact.submit') }}" method="POST">
         @csrf
         <div>
-            <label for="name">お名前</label>
+            <label for="name">名前</label>
             <input type="text" id="name" name="name" value="{{ old('name') }}">
             @error('name')
                 <div>{{ $message }}</div>
